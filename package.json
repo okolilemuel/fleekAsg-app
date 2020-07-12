@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "test": "jest --coverage"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -16,6 +17,11 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "istanbul": "^0.4.5",
+    "istanbul-api": "^3.0.0",
+    "istanbul-reports": "^3.0.2",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }
